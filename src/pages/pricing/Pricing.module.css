@@ -1,0 +1,14 @@
+.cardContainer{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.card{
+    background-color: rgb(214, 238, 245);
+    padding: 0 1rem;
+    margin: 0 0.5rem;
+    width: 30%;
+}
+.card h4{
+    margin-top: 1px;
+}

@@ -1,0 +1,28 @@
+.container{
+  background-color: #01161e;
+}
+.carousel{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.imgContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #edf6f9;
+  width: 80%;
+}
+.img{
+  width: 85%;
+  height: 82vh;
+}
+.changeContent{
+  height: 2rem;
+  width: 4rem;
+  border-radius: 1cap;
+  cursor: pointer;
+}

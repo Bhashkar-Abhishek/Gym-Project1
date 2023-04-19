@@ -1,0 +1,39 @@
+.container{
+    height: 100vh;
+    background-image: url(/home/mark42/functionup/react/projects/gym-project1/gym-project1/src/assets/img_14.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.video_div{
+    height: 42vh;
+    display: flex;
+    flex-direction: row;
+    margin: 2rem;
+    color: #f8edeb;
+    gap: 6rem;
+    font-size: large;
+    font-weight: 500;
+    overflow: hidden;
+}
+.about_div{
+    height: 42vh;
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    margin: 2rem;
+    font-size: large;
+    font-weight: 500;
+    overflow: hidden;
+    gap: 6rem;
+    
+}
+h1{
+    color: tomato;
+}
+
+@media only screen and  (max-width: 1020px){
+    .main_aboutdiv{
+        display: block;
+        max-width: 70vw;
+    }
+}

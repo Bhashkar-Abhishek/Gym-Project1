@@ -1,0 +1,23 @@
+
+.container{
+    margin: 0;
+    padding: 0;
+    background-image: url(/home/mark42/functionup/react/projects/gym-project1/gym-project1/src/assets/img_1.jpg);
+    height: 113vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.homeContent{
+    color: white;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2em;
+    
+}
+hr{
+    color: red;
+}
