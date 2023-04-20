@@ -11,15 +11,21 @@
     height: 100vh;
 }
 .RegistrationPage h1 {
+    color: whitesmoke;
     font-size: 2rem;
     margin-top: 0;
     margin-bottom: 1rem;
 }
+.data{
+    
+    padding: 3em;
+}
+
 
 .RegistrationPage form {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     width: 50%;
     background-color:transparent;
@@ -37,10 +43,11 @@
 
 .RegistrationPage input {
            
- height: 2rem;
- width: 20rem;
+ height: 2.5rem;
+ /* padding: 0.5em; */
+ width: 20vw;
  margin-top: 0.5rem;
- margin-bottom: 2rem;
+ /* margin-bottom: 2rem; */
  border: none;
  border-radius: 6px;
  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
@@ -49,8 +56,17 @@
 
 .RegistrationPage p {
     color: red;
-    margin: 1rem 0;
+    /* margin: 1rem 0; */
+    margin-top: -5px;
+    margin-left: 1em;
 }
+.RegistrationPage span {
+    color: white;
+    /* margin: 1rem 0; */
+    margin-top: -5px;
+    margin-left: 1em;
+}
+
 
 .RegistrationPage button[type="submit"] {
  
