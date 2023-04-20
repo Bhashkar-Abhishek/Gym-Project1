@@ -51,9 +51,9 @@ function RegistrationPage() {
     localStorage.setItem('users', JSON.stringify(updatedUsers));
 
     // Redirect to home page 
-    const confirmation = window.confirm('User registered successfully! Click OK to go to home page.');
+    const confirmation = window.confirm('Registered successfully done! Click ok to go to Login page.');
     if (confirmation) {
-      window.location.href = '/';
+      window.location.href = '/login';
     }
 
   }
