@@ -34,12 +34,12 @@ function LoginPage() {
     } else {
       setLoginError('Email or Password is incorrect');
     }
-  }
+  } 
 
   return (
     <div className={Style.container}>
 <div className={Style.leftDiv}>
-        <img src="https://wallpaper.dog/large/20502651.jpg"/>
+        <img src="https://wallpaper.dog/large/20502651.jpg" alt='wallpaper'/>
       </div>
       <div className={Style.form}>
         <h1>Login </h1>
@@ -50,10 +50,12 @@ function LoginPage() {
           <input type="password" id="password" name="password" value={password} onChange={handlePasswordChange} required="true" /><br />
 
           {loginError && <span>{loginError}</span>}
-          < p>Don't have an account? <Link to="/registation">Register here</Link>.</p>
+          
           <button type="submit">Login</button>
-
+          
+          < p>Don't have an account? <Link to="/registation">Register here</Link>.</p>
         </form>
+        
       </div>
     </div>
   );
