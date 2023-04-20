@@ -8,24 +8,25 @@
     top: 0;
     z-index: 9999;
     background: transparent;
+    
 }
 
 .link_div,
 li {
     display: flex;
-    /* border: 2px solid gray; */
     gap: 50px;
     color: azure;
     margin-top: 2vh;
-    /* font-style: oblique; */
     font-size: large;
+    
 }
+
 
 .btn {
     
     /* margin-top: 2vh; */
-    height: 4vh;
-    width: 6vw;
+    height: 6vh;
+    width: 8vw;
     background-color: tomato;
     border: none;
     border-radius: 7px;
@@ -34,7 +35,6 @@ li {
     cursor: pointer;
 }
 .btn_div{
-    margin-top: 2rem;
     display: flex;
     align-items: center;
 }
@@ -42,8 +42,17 @@ li {
 .logo h1 {
     color: red;
     list-style: none;
-    margin-top: 2rem;
+    margin-top: .5em;
 }
+.userlogo{
+   
+    margin-left: -4em;
+    margin-top: 1em;
+}
+.userlogo p{
+    color: red;
+}
+
 .mobileIcon{
     visibility: hidden;
 }
@@ -53,13 +62,14 @@ li {
 }
 .icon{
     position: absolute;
-    left: 2em;
+    left: 10em;
 }
 .icon span{
     color:aquamarine;
 }
 .icon h1{
     color: red;
+    
 }
 
 .menuIcon{
@@ -84,6 +94,25 @@ li {
         font-size: 30px;
         color: red;
     }
+    .mobileLink{
+        /* border: 1px solid red; */
+        background-color: rgb(194, 45, 11);
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        gap: .5em;
+        /* margin-right: -4em; */
+        margin-top: 3em;
+        height: 30vh;
+        width: 15vw;
+    }
+    .mobileLink p{
+         color: rgb(241, 230, 230);
+         text-decoration: none;
+         
+    }
 
 }
 @media screen and (min-width: 1020px) { 
@@ -94,5 +123,9 @@ li {
     .logo{
         visibility: visible;
     }
-
+    .mobileLink{
+        display: none;
+    }
+    
 }
+Foo
