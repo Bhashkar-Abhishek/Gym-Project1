@@ -1,17 +1,19 @@
 import React from 'react'
+import Style from './AboutUs.module.css'
 import Button from '../../components/Button'
 import ReactPlayer from 'react-player'
-import Style from "./AboutUs.module.css"
-import Navbar from '../navbar/Navbar'
-import Footer from '../footer/Footer'
+import Navbar from '../navbar/Navbar';
+import Footer from '../footer/Footer';
+
+
 
 export default function AboutUs() {
     return (
         <div className={Style.container}>
-            <Navbar/>
+            <Navbar />
             <div className={Style.content}>
                 <div className={Style.video_div}>
-                    <section>
+                    <section className={Style.video}>
                         <ReactPlayer controls="true" url='https://www.youtube.com/watch?v=-a4vyrtxr_U' width="40vw" />
                     </section>
                     <section >
@@ -22,7 +24,7 @@ export default function AboutUs() {
 
                             This all-in-one pack is for everyone, so take action and you can have a website live VERY quickly.
                         </span>
-                        <Button name='Learn More' />
+                        <Button name='Learn More' /> 
                     </section>
                 </div>
 
@@ -37,14 +39,12 @@ export default function AboutUs() {
                         <Button name='Learn More' />
                     </section>
                     <section>
-                        <ReactPlayer controls="true" url="https://www.youtube.com/embed/X_9VoqR5ojM" width="40vw" />
+                        <ReactPlayer url="https://www.youtube.com/embed/X_9VoqR5ojM" width="40vw" />
                     </section>
 
                 </div>
             </div>
-            <div className={Style.footer}>
-    <Footer/>
-      </div>
+            <Footer/>
         </div>
     )
 }
