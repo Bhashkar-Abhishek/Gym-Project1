@@ -1,65 +1,68 @@
-import React from 'react'
-import Style from './Footer.module.css'
-import {BsFacebook,BsInstagram,BsTwitter} from 'react-icons/bs';
+.container{
+    height: 200vh;
+    background-image: url('../../assets/img_14.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+} 
+.video_div{
+    display: flex;
+    flex-direction: row;
+    margin: 2rem;
+    color: #adb5bd;
+    gap: 6rem;
+    font-size: large;
+    font-weight: 500;
+    overflow: hidden;
+}
+.video_div h1{
+    color: tomato;
+}
+.video_div span{
+    color:aliceblue;
+}
 
-export default function Footer() {
-  return (
-    <div className={Style.container}>
-      <div className={Style.bkimg}>
-        <div className={Style.main_footer}>
-          <div className={Style.leftside}>
-            <h1>GYM</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, culpa.</p>
-            <div className={Style.mediaIcon}>
-        <span><BsFacebook/></span>
-        <span><BsInstagram/></span>
-        <span><BsTwitter/></span>
-        </div>
-          </div>
-          <div className={Style.Table}>
-            <table width='100%' >
-              <tr>
-                <th>ACCOUNT</th>
-                <th>CUSTOMER SERVICE</th>
-                <th>ABOUT FITNESS</th>
-              </tr>
-              <tr>
-                <td>Wishlist</td>
-                <td>Delivery</td>
-                <td>Carrers</td>
-              </tr>
-              <tr>
-                <td>Checkout</td>
-                <td>Contact Us</td>
-                <td>Gender pay report</td>
-              </tr>
-              <tr>
-                <td>My Account</td>
-                <td>FAQS</td>
-                <td>Privacy Policy</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>Size guide</td>
-                <td>Secure Shopping</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>Gift Certificate</td>
-                <td>Term & conditions</td>
-              </tr>
-              
-            </table>
-          </div>
+.about_div{
+    display: flex;
+    flex-direction: row;
+    color: #adb5bd;
+    margin: 2rem;
+    font-size: large;
+    font-weight: 500;
+    overflow: hidden;
+    gap: 6rem;
+    
+}
+.about_div h1{
+    color: tomato;
+}
+.about_div span{
+    color:aliceblue;
+}
 
 
-        </div>
-        <div className={Style.copy}>
-          <p>@2023 is all rightes copy reserved</p>
-        </div>
-      </div>
+@media screen and  (max-width: 1020px){
+    .main_aboutdiv{
+        display: block;
+        max-width: 70vw; 
+    }
+    .content{
+        display: block;
 
-
-    </div>
-  )
+    }
+    .video_div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+        margin-left: 10em;
+        /* justify-content: center; */
+    }
+    .about_div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+        margin-left: 10em;
+    }
+    
 }
