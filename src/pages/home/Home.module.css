@@ -1,17 +1,18 @@
-
-.container{
+.homeImg{
     margin: 0;
     padding: 0;
-    background-image: url(../../assets/img_1.jpg);
-    height: 113vh;
+    background-image: url("../../assets/img_1.jpg");
+    height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    
 }
 .homeContent{
     color: white;
     width: 50%;
-    height: 100vh;
+    /* height: 100vh; */
+    margin-top: 10em;
     display: flex;
     justify-content: center;
     flex-direction: column;
