@@ -2,7 +2,7 @@
 .container{
     margin: 0;
     padding: 0;
-    background-image: url(/home/mark42/functionup/react/projects/gym-project1/gym-project1/src/assets/img_1.jpg);
+    background-image: url(../../assets/img_1.jpg);
     height: 113vh;
     background-size: cover;
     background-repeat: no-repeat;
