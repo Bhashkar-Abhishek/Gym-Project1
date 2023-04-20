@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Style from "./Program.module.css";
 import Navbar from "../navbar/Navbar";
-import Footer from '../footer/Footer';
-
+import Footer from "../footer/Footer";
 
 const images = [
   {
@@ -15,15 +14,15 @@ const images = [
   },
   {
     url: "https://wallpaperaccess.com/full/113299.jpg",
-    text: " Sport, both amateur and professional, involving attack and defense with the fists. Matched in weight and ability, boxing contestants try to land blows hard and often with their fists, each attempting to avoid the blows of the opponent.",
+    text: "Sport, both amateur and professional, involving attack and defense with the fists. Matched in weight and ability, boxing contestants try to land blows hard and often with their fists, each attempting to avoid the blows of the opponent.",
   },
   {
-    url: "https://wallpapers.com/images/hd/wing-chun-kuen-brazilian-jiu-jitsu-1hjqjdv0qwz1wkc1.jpg",
+    url: "https://wallpaperaccess.com/full/1960777.jpg",
     text: "Brazilian Jiu-Jitsu (BJJ) is a grappling-based martial art whose central theme is the skill of controlling a resisting opponent in ways that force him to submit. Due to the fact that control is generally easier on the ground than in a standing position, much of the technique of Brazilian Jiu-Jitsu (BJJ) is centered around the skill of taking an opponent down to the ground and wrestling for dominant control positions from where the opponent can be rendered harmless",
   },
   {
     url: "https://c4.wallpaperflare.com/wallpaper/246/188/1015/fight-skill-training-technique-wallpaper-preview.jpg",
-    text: "Jujitsu, Japanese jūjitsu (“gentle art”), form of martial art and method of fighting that makes use of few or no weapons and employs holds, throws, and paralyzing blows to subdue an opponent. ",
+    text: "Jujitsu, Japanese jūjitsu (“gentle art”), form of martial art and method of fighting that makes use of few or no weapons and employs holds, throws, and paralyzing blows to subdue an opponent.",
   },
   {
     url: "https://c4.wallpaperflare.com/wallpaper/810/571/618/the-sky-sport-battle-wallpaper-preview.jpg",
@@ -38,7 +37,7 @@ const images = [
     text: "Mixed martial arts (MMA), hybrid combat sport incorporating techniques from boxing, wrestling, judo, jujitsu, karate, Muay Thai (Thai boxing), and other disciplines.",
   }, {
     url: "https://cdn.wallpapersafari.com/93/36/x8q3e5.jpg",
-    text: "Taekwondo is one of the most systematic and scientific Korean traditional martial arts, that teaches more than physical fighting skills. It is a discipline that shows ways of enhancing our spirit and life through training our body and mind. Today, it has become a global sport that has gained an international reputation, and stands among the official games in the Olympics."
+    text: "Taekwondo is one of the most systematic and scientific Korean traditional martial arts, that teaches more than physical fighting skills. It is a discipline that shows ways of enhancing our spirit and life through training our body and mind. Today, it has become a global sport that has gained an international reputation, and stands among the official games in the Olympics.",
   },
 ];
 
@@ -50,7 +49,7 @@ const Program = () => {
       const currentIndex = images.findIndex((image) => image === currentImage);
       const nextIndex = (currentIndex + 1) % images.length;
       setCurrentImage(images[nextIndex]);
-    }, 3000);
+    }, 2000);
     return () => clearInterval(interval);
   }, [currentImage]);
 
@@ -59,13 +58,15 @@ const Program = () => {
       <Navbar />
       <div className={Style.image_container}>
         <img src={currentImage.url} alt={currentImage.text} />
-        <p>{currentImage.text}</p>
+        <div className={Style.textContent}>
+          <p>{currentImage.text}</p>
+        </div>
+
       </div>
-      <div className={Style.footer}>
-    <Footer/>
-      </div>
+      <Footer />
     </div>
   );
 };
 
 export default Program;
+Foote
