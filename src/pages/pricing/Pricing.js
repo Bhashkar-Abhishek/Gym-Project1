@@ -9,8 +9,8 @@ import CardContent from "@material-ui/core/CardContent";
 import CardHeader from "@material-ui/core/CardHeader";
 import Button from "@material-ui/core/Button";
 import Link from "@material-ui/core/Link";
-import Navbar from "../navbar/Navbar";
-import Footer from "../footer/Footer";
+import Navbar from '../navbar/Navbar';
+import Footer from '../footer/Footer'
 //import Switch from "@material-ui/core/Switch";
 
 const useStyles = makeStyles((theme) => ({
@@ -18,13 +18,13 @@ const useStyles = makeStyles((theme) => ({
     backgroundImage: 'url("nereus-assets/img/bg/pattern1.png")',
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
-    height: "100vh",
+    
+    
   },
   cardHeader: {
     paddingTop: theme.spacing(3),
     "& .MuiTypography-h5": {
       fontSize: "3rem",
-      
     },
   },
   image: {
@@ -32,6 +32,7 @@ const useStyles = makeStyles((theme) => ({
       'url("https://media.istockphoto.com/id/875207140/photo/sport-background-with-fitness-equipment-in-gym-gym.jpg?s=612x612&w=0&k=20&c=VEpZIAJ3wdlwHwvWuLumDmpsWczobiSH5kL981H5Cvk=")',
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
+    
   },
 }));
 
@@ -86,8 +87,8 @@ export default function Pricing(props) {
 
   return (
     <div className={classes.image}>
-      <Navbar />
-      <section className={classes.section} style={{ margin:"4rem" }}>
+      <Navbar/>
+      <section className={classes.section}>
         <Container maxWidth="lg">
           <Box py={8} textAlign="center">
             <Box mb={3}>
@@ -96,7 +97,7 @@ export default function Pricing(props) {
                 {content["badge"]}
               </Typography> */}
                 <Typography variant="h3" component="h2" gutterBottom={true}>
-                  <Typography variant="h3" component="span" color="primary">
+                  <Typography variant="h3"  component="span"  color="primary">
                     {content["header-p1"]}{" "}
                   </Typography>
                   <Typography
@@ -109,36 +110,47 @@ export default function Pricing(props) {
                 </Typography>
                 <Typography
                   variant="subtitle1"
-                  style={{ color: "white",margin:"4rem",fontSize:"1.3rem" }}
+                  style={{ color: "white" }}
                   paragraph={true}
                 >
                   {content["description"]}
                 </Typography>
 
-                
+                {/* <div>
+                <Typography variant="subtitle1" component="span">
+                  {content["option1"]}
+                </Typography>
+                &nbsp;{" "}
+                <Switch
+                  name="checkbox"
+                  color="primary"
+                  checked={state.checkbox}
+                  onChange={handleChange}
+                />{" "}
+                &nbsp;
+                <Typography variant="subtitle1" component="span">
+                  {content["option2"]}
+                </Typography>
+              </div> */}
               </Container>
             </Box>
             <Grid container spacing={3}>
               <Grid item xs={12} md={4}>
                 <Card variant="outlined">
                   <CardHeader
-                    style={{
-                      color: "red",
-
-                      display: "flex",
-                      flexDirection: "column",
-                      alignItems: "center",
-                    }}
+                  style={{
+                    color: 'red',
+                    
+                    display:'flex',
+                    flexDirection:'column',
+                    alignItems:'center'}}
                     title={content["01_title"]}
                     className={classes.cardHeader}
                   ></CardHeader>
-                  <CardContent
-                    style={{
-                      display: "flex",
-                      flexDirection: "column",
-                      alignItems: "center",
-                    }}
-                  >
+                  <CardContent style={{
+                    display:'flex',
+                    flexDirection:'column',
+                    alignItems:'center'}}>
                     <Box px={1}>
                       <Typography
                         variant="h3"
@@ -190,34 +202,30 @@ export default function Pricing(props) {
                       color="primary"
                       className={classes.primaryAction}
                     >
-                      <Link href="/login">{content["01_primary-action"]}</Link>
+                      {content["01_primary-action"]}
                     </Button>
-                    {/* <Box mt={2}>
+                    <Box mt={2}>
                       <Link href="#" color="primary">
                         {content["03_secondary-action"]}
                       </Link>
-                    </Box> */}
+                    </Box>
                   </CardContent>
                 </Card>
               </Grid>
               <Grid item xs={12} md={4}>
                 <Card variant="outlined">
-                  <CardHeader
-                    style={{
-                      color: "red",
-                      display: "flex",
-                      flexDirection: "column",
-                      alignItems: "center",
-                    }}
+                  <CardHeader style={{
+                    color: "red",
+                    display:'flex',
+                    flexDirection:'column',
+                    alignItems:'center'}}
                     title={content["02_title"]}
                     className={classes.cardHeader}
                   ></CardHeader>
-                  <CardContent
-                    style={{
-                      display: "flex",
-                      flexDirection: "column",
-                      alignItems: "center",
-                    }}
+                  <CardContent style={{
+                    display:'flex',
+                    flexDirection:'column',
+                    alignItems:'center'}}
                   >
                     <Box px={1}>
                       <Typography
@@ -266,36 +274,30 @@ export default function Pricing(props) {
                       </Typography>
                     </Box>
                     <Button variant="contained" color="primary">
-                      <Link href="/login" style={{ color: "white" }}>
-                        {content["02_primary-action"]}
-                      </Link>
+                      {content["02_primary-action"]}
                     </Button>
-                    {/* <Box mt={2}>
+                    <Box mt={2}>
                       <Link href="#" color="primary">
                         {content["03_secondary-action"]}
                       </Link>
-                    </Box> */}
+                    </Box>
                   </CardContent>
                 </Card>
               </Grid>
               <Grid item xs={12} md={4}>
                 <Card variant="outlined">
-                  <CardHeader
-                    style={{
-                      color: "red",
-                      display: "flex",
-                      flexDirection: "column",
-                      alignItems: "center",
-                    }}
+                  <CardHeader style={{
+                    color: "red",
+                    display:'flex',
+                    flexDirection:'column',
+                    alignItems:'center'}}
                     title={content["03_title"]}
                     className={classes.cardHeader}
                   ></CardHeader>
-                  <CardContent
-                    style={{
-                      display: "flex",
-                      flexDirection: "column",
-                      alignItems: "center",
-                    }}
+                  <CardContent style={{
+                    display:'flex',
+                    flexDirection:'column',
+                    alignItems:'center'}} 
                   >
                     <Box px={1}>
                       <Typography
@@ -332,7 +334,6 @@ export default function Pricing(props) {
                         variant="subtitle1"
                         component="p"
                       >
-
                         {content["03_benefit3"]}
                       </Typography>
                       <Typography
@@ -345,13 +346,13 @@ export default function Pricing(props) {
                       </Typography>
                     </Box>
                     <Button variant="outlined" color="primary">
-                      <Link href="/login">{content["03_primary-action"]}</Link>
+                      {content["03_primary-action"]}
                     </Button>
-                    {/* <Box mt={2}>
+                    <Box mt={2}>
                       <Link href="#" color="primary">
                         {content["03_secondary-action"]}
                       </Link>
-                    </Box> */}
+                    </Box>
                   </CardContent>
                 </Card>
               </Grid>
@@ -359,7 +360,7 @@ export default function Pricing(props) {
           </Box>
         </Container>
       </section>
-      <Footer />
+      <Footer/>
     </div>
   );
 }
