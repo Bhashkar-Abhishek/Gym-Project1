@@ -6,7 +6,7 @@ import Login from './pages/login/Login';
 import Registation from './pages/registration/Registration';
 import Training from './pages/training/Training';
 import Pricing from './pages/pricing/Pricing';
-import AboutUs from './pages/about/AboutUs';
+import AboutUs from './pages/aboutUs/AboutUs';
 import ProtectsRoutes from './services/ProtectsRoutes';
 
 
