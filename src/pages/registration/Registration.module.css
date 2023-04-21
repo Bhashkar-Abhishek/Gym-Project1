@@ -56,9 +56,9 @@
 
 .RegistrationPage p {
     color: red;
-    /* margin: 1rem 0; */
     margin-top: -5px;
-    margin-left: 1em;
+    font-size: small;
+    text-align: start;
 }
 .RegistrationPage span {
     color: white;
