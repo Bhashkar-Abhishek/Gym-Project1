@@ -9,18 +9,7 @@ const Training = () => {
       url: 'https://img2.wallspic.com/previews/1/0/0/1/31001/31001-bodybuilder-arm-strength_training-male-fitness_centre-x750.jpg',
       name: 'Strngth Training'
     },
-    // {
-    //   url: 'https://media.istockphoto.com/id/655781960/photo/determined-male-working-out-in-gym-lifting-weights.jpg?s=612x612&w=0&k=20&c=k9C0fgbVHYxiQLe8hckSx9OqAEaGVUfiVXYq8JGxhoE=',
-    //   name: 'lio'
-    // },
-    // {
-    //   url: 'https://media.istockphoto.com/id/655781960/photo/determined-male-working-out-in-gym-lifting-weights.jpg?s=612x612&w=0&k=20&c=k9C0fgbVHYxiQLe8hckSx9OqAEaGVUfiVXYq8JGxhoE=',
-    //   name: 'lio'
-    // },
-    // {
-    //   url: 'https://media.istockphoto.com/id/655781960/photo/determined-male-working-out-in-gym-lifting-weights.jpg?s=612x612&w=0&k=20&c=k9C0fgbVHYxiQLe8hckSx9OqAEaGVUfiVXYq8JGxhoE=',
-    //   name: 'lio'
-    // },
+
     {
       url: 'https://media.istockphoto.com/id/655781960/photo/determined-male-working-out-in-gym-lifting-weights.jpg?s=612x612&w=0&k=20&c=k9C0fgbVHYxiQLe8hckSx9OqAEaGVUfiVXYq8JGxhoE=',
       name: 'lio'
@@ -56,7 +45,7 @@ const Training = () => {
       <Navbar />
       <div className={Style.carousel}>
         <button onClick={handlePrevious}><FaLessThan /></button>
-        <div className={Style.imgContainer}>
+        <div className={`${Style.imgContainer} imgContainer`}>
           <img src={photos[index].url} alt={photos[index].name} />
           <p>{photos[index].name}</p>
         </div>

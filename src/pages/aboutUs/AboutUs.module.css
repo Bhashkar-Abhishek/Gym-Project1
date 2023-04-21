@@ -1,68 +1,71 @@
-.container{
-    height: 200vh;
-    background-image: url('../../assets/img_14.jpg');
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: url(../../assets/img_14.jpg) no-repeat center  fixed;
     background-size: cover;
-    background-repeat: no-repeat;
-} 
-.video_div{
+    color: #fff;
+  }
+  
+  .content {
+    flex: 1;
     display: flex;
-    flex-direction: row;
-    margin: 2rem;
-    color: #adb5bd;
-    gap: 6rem;
-    font-size: large;
-    font-weight: 500;
-    overflow: hidden;
-}
-.video_div h1{
-    color: tomato;
-}
-.video_div span{
-    color:aliceblue;
-}
-
-.about_div{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .video_div {
     display: flex;
-    flex-direction: row;
-    color: #adb5bd;
-    margin: 2rem;
-    font-size: large;
-    font-weight: 500;
-    overflow: hidden;
-    gap: 6rem;
-    
-}
-.about_div h1{
-    color: tomato;
-}
-.about_div span{
-    color:aliceblue;
-}
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .video {
+    margin-bottom: 1rem;
+  }
 
-
-@media screen and  (max-width: 1020px){
-    .main_aboutdiv{
-        display: block;
-        max-width: 70vw; 
+  .about_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4em;
+  }
+  
+  .about_div section {
+    margin-bottom: 2rem;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .content {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
     }
-    .content{
-        display: block;
-
+  
+    .video_div {
+      max-width: 40%;
+      margin-right: 2rem;
+      margin-bottom: 0;
     }
-    .video_div{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 70%;
-        margin-left: 10em;
-        /* justify-content: center; */
+  
+    .about_div {
+      max-width: 50%;
     }
-    .about_div{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 70%;
-        margin-left: 10em;
+  }
+  
+  @media only screen and (min-width: 992px) {
+    .video_div {
+      max-width: 50%;
     }
-    
-}
+  
+    .about_div {
+      max-width: 40%;
+    }
+  }
+   

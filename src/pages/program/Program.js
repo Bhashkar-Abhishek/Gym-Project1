@@ -49,7 +49,7 @@ const Program = () => {
       const currentIndex = images.findIndex((image) => image === currentImage);
       const nextIndex = (currentIndex + 1) % images.length;
       setCurrentImage(images[nextIndex]);
-    }, 2000);
+    }, 3000);
     return () => clearInterval(interval);
   }, [currentImage]);
 

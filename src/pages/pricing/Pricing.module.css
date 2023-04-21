@@ -1,14 +1,130 @@
-.cardContainer{
-    margin-top: 2rem;
-    display: flex;
-    justify-content: space-evenly;
-}
-.card{
-    background-color: rgb(214, 238, 245);
-    padding: 0 1rem;
-    margin: 0 0.5rem;
-    width: 30%;
-}
-.card h4{
-    margin-top: 1px;
-}
+.main_div{
+    text-align: center;
+    background-image: url("https://media.istockphoto.com/id/875207140/photo/sport-background-with-fitness-equipment-in-gym-gym.jpg?s=612x612&w=0&k=20&c=VEpZIAJ3wdlwHwvWuLumDmpsWczobiSH5kL981H5Cvk=");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+  .p_table{
+      display: flex;
+      justify-content: center;
+      justify-content: space-around;
+        margin-top: 10em;      
+  }
+  .content{
+      padding: 2em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  .content h1 {
+      color: whitesmoke;
+  }
+  .content p{
+      color: whitesmoke;
+      font-size: 1.2em;
+      margin-top: 2em;
+  }
+  .content span{
+      color: rgb(65, 65, 171);
+      font-size: 1.5em;
+  }
+  
+  .div_1, .div_2, .div_3 {
+    
+      border-radius: 5px;
+      padding: 1em 0px;
+      margin: 1em;
+      width: 20vw;
+      background-color:whitesmoke;
+      box-shadow: 0px 0px 10px 3px lightgray;
+  }
+  .p_table :hover{
+      background-color: #fca311;
+  }
+  
+  .p_table :hover h2{
+      color: #008000;
+  }
+  .p_table :hover button{
+      background-color: white;
+      color: #33415c;
+  }
+  .div_1, .div_2, button{
+      padding: .5em;
+      margin: 2em;
+      border-radius: 4px;
+      border: none;
+      
+  }
+  .div_3, button{
+      padding: .5em;
+      margin: 2em;
+      border-radius: 4px;
+      border: none;
+  }
+  
+  .div_1 button:hover {
+      background-color:rgb(68, 53, 122);
+      color: white;
+  }
+  .div_2 button:hover {
+      background-color:rgb(68, 53, 122);
+      color: white;
+  }
+  .div_3 button:hover {
+      background-color:rgb(68, 53, 122);
+      color: white;
+  }
+  .div_1 h2{
+    color: rgb(15, 15, 181);
+
+  }
+  .div_2 h2{
+      color: rgb(15, 15, 181);
+  }
+  .div_3 h2{
+      color: rgb(15, 15, 181);
+  }
+  .div_1 span{
+      font-family:'Times New Roman', Times, serif ;
+      font-size: 1em;
+      font-weight: bold;
+      text-shadow: 0.5px 1px red;
+  }
+  .div_2 span{
+      font-family:'Times New Roman', Times, serif ;
+      font-size: 1em;
+      font-weight: bold;
+      text-shadow: 0.5px 1px red;
+  }
+  .div_3 span{
+      font-family:'Times New Roman', Times, serif ;
+      font-size: 1em;
+      font-weight: bold;
+      text-shadow: 0.5px 1px red;
+  }
+  
+  
+  @media only screen and  (max-width: 750px ){
+  
+      .p_table{
+          
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+         
+      }
+      .div_3, .div_2, .div_1{
+          
+          width: 70%;
+          text-align: center;
+          padding: 0;
+          
+      }
+      .main_div{
+          height: 100%;
+      }
+      
+  }

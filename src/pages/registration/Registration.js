@@ -85,10 +85,7 @@ function RegistrationPage() {
 
   return (
     <div className={Style.RegistrationPage}>
-      <div className={Style.leftDiv}>
-        <img src='https://trumpwallpapers.com/wp-content/uploads/Workout-Wallpaper-01-1600-x-843.jpg' alt='wallpaper' />
-      </div>
-
+    
       <form onSubmit={handleRegistration} className={Style.data}>
         <h1>Register </h1>
         <label htmlFor="username">Username:</label>
@@ -109,3 +106,4 @@ function RegistrationPage() {
 }
 
 export default RegistrationPage;
+
