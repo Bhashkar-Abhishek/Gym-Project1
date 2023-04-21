@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import Style from './Login.module.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate} from 'react-router-dom';
 
 
 
 
 function LoginPage() {
+  const navigate =useNavigate()
   const [email, setUserEmail] = useState('');
   const [password, setPassword] = useState('');
   const [loginError, setLoginError] = useState('');
@@ -29,7 +30,7 @@ function LoginPage() {
       const confirmation = window.confirm('Login successfully! Click OK to go to Home page.');
       if (confirmation) {
         localStorage.setItem('logged', true)
-        window.location.href = '/';
+         navigate('/');
       }
     } else {
       setLoginError('Email or Password is incorrect');
