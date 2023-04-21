@@ -45,8 +45,7 @@
     text-shadow: 0.5px 1px #000;}
 
 .container input {
-       
- height: 2.5rem;
+ padding: 0.5em;      
  width: 20vw;
  margin-top: 0.5rem;
  margin-bottom: 2rem;
